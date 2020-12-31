@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rebeccapurple;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    opacity: 0.5;
+}
+
+.logo:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: rgb(38, 57, 77) 0px 15px 15px -10px;
+}
+
+.icon-container {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 48px;
+}
+
+.fa-instagram {
+    color: #343434;
+    transition: 0.3s ease-out;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.btn {
+    background-color: #fff;
+    color: rebeccapurple;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+#toasts {
+    position: fixed;
+    display: fixed;
+    bottom: 10px;
+    right: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.toast {
+    background-color: #fff;
+    color: rebeccapurple;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    transition: opacity 0.5s linear;
+}
+
+.toast.fade {
+    opacity: 0;
+}
+
+.toast.info {
+    color: rebeccapurple;
+}
+
+.toast.success {
+    color: green;
+}
+
+.toast.warning {
+    color: orange;
+}
+
+.toast.error {
+    color: red;
+}
